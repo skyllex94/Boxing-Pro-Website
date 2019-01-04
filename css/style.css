@@ -1,0 +1,629 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 18px;
+    overflow-x: hidden !important;
+    font-family: 'Montserrat', sans-serif;
+}
+/* -----------  SECTIONS  ------------*/
+section:nth-child(1){
+    height: 100vh;
+    width: 100%;
+    display: table;
+    background-image:linear-gradient(rgba(61, 60, 60, 0.8),rgba(0,0,0,0.7)), url('../images/boxing-16.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section:nth-child(2){
+    height: 70vh;
+    width: 100%;
+    background-image: #eee;
+    color: #333;
+}
+
+section:nth-child(3){
+    height: 120vh;
+    width: 100%;
+    color: #eee;
+    background-image: linear-gradient(rgba(61, 60, 60, 0.8),rgba(0,0,0,0.7)), url('../images/boxing-gloves.jpg');
+    display: table;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section:nth-child(4){
+    height: 80vh;
+    width: 100%;
+}
+
+section:nth-child(5){
+    width: 100%;
+}
+
+section:nth-child(6){
+    height: 80vh;
+    width: 100%;
+    
+}
+
+section:nth-child(7){
+    width: 100%;
+    height: 50vh;
+    
+}
+
+.copyright{
+    width: 100%;
+    height: 10vh;
+    background: rgb(44, 44, 44);
+    color: rgb(202, 198, 198);
+    text-align: center;
+    padding-top: 25px;
+    font-size: 1vw;
+}
+.copyright p {
+    font-size: 16px;
+}
+
+.row{
+    max-width: 80%;
+    margin: 0 auto;
+    background-image: #eee;
+    color: #333;
+}
+/*--------------------  NAVIGATION  --------------------*/
+.nav-bar .logo {
+    height: 65px;
+    width: auto;
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    transition: height 0.5s;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    position: fixed;
+    z-index: 999;
+    transition: height 0.5s;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 25px;
+}
+
+.main-nav li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+    transition: color 0.5s;
+    transition: font-size 0.5s;
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid #4eb4dd;
+}
+
+.main-content-header{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    color: #fff;
+    font-size: 160%;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+    background-color: transparent;
+    color: #4eb4dd;
+    border: 1px solid #4eb4dd;
+    margin-right: 1%;
+}
+
+.btn-full{
+    background-color: transparent;
+    color: #4eb4dd;
+    margin-right: 20px; 
+    border: 1px solid #4eb4dd;
+}
+
+.btn:hover{
+    background-color: rgb(218, 216, 216);
+    color: #333;
+    font-weight: bold;
+}
+
+.btn-nav{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.btn-nav:hover{
+    background-color: #4eb4dd;
+}
+
+.colorchange{
+    animation: colorchangeanimation 3s infinite;
+}
+
+@keyframes colorchangeanimation{
+    0%{color: #4eb4dd}
+    25%{color: orange}
+    50%{color: #4eb4dd}
+    100%{color: #4eb4dd}
+}
+/* ---------------------------------- THREE BOXES CONTENT ------------------------------------ */
+#boxes{
+    margin-top: 100px;
+}
+
+.lead-text h2{
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 1500;
+}
+
+.lead-text h4{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.container{
+    margin-left: 10%;
+}
+
+#boxes .box {
+    float: left;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    font-size: 10;
+    background: white;
+}
+
+#boxes .box img{
+    width: 100px;
+    height: auto;
+}
+
+#boxes .box h3{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.layout{
+    margin-top: 100px;
+}
+
+.layout .layout-box {
+    float: left;
+    width: 50%;
+}
+
+.layout .layout-box img{
+    height: auto;
+    padding: 0 10%;
+    max-width: 100%;
+    
+}
+/* ----------- First Text Appearance  ------------*/
+.text-appear{
+    opacity: 0;
+    transform: translateY(75px);
+    transition: 1s all ease-in-out;
+    padding: 50px;
+}
+
+.text-appear h3{
+    
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.text-appear p{
+    margin: 10px 0;
+}
+
+.text-appear .btn{
+    margin-top: 25px;
+}
+
+.text-appearance{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+/* ----------- Second Text Appearance  ------------*/
+.text-appear2{
+    opacity: 0;
+    transform: translateY(75px);
+    transition: 1s all ease-in-out;
+    color: #333;
+    padding: 0 10%;
+}
+.text-appear2 h3{
+    margin-top: 15%;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.text-appear2 p{
+    margin: 10px 0;
+}
+
+.text-appearance{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+/* ----------- Testemonial Section ------------*/
+.wrapper{
+    width: 100%;
+    padding: 50px;
+}
+
+.slider-testimonial{
+    width: 85%;
+    max-width: 1400;
+    margin: auto;
+}
+
+.testimonial-client{
+    margin-bottom: 25px;
+}
+
+.testimonial-client img{
+    width: 150px;
+    margin: auto !important;
+}
+
+.client-name{
+    font-weight: 600;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.testimonial-text p{
+    font-weight: 300;
+    text-align: center;
+    font-style: italic;
+    color: #454545;
+    width: 90%;
+    margin: auto;
+}
+/* ------------------------ Counter -----------------------*/
+.counter{
+    position: relative;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50);
+}
+
+.counting-section{
+    padding: 40px 0;
+    width: 100%;
+    background: linear-gradient(90deg, #403A3E, #BE5869);
+}
+
+.inner-width{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.col{
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    color: #eee;
+    text-transform: uppercase;
+    font-family: "montserrat", sans-serif !important;
+    font-weight: bold; 
+}
+
+.col img{
+    height: 65px;
+}
+
+.num{
+    font-size: 30px;
+    margin: 10px 0;
+}
+/* ---------------------------------- SIX BOXES CONTENT ------------------------------------ */
+
+
+#six-boxes {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#six-boxes .container-six{
+    margin: auto;
+}
+
+#six-boxes .six-box {
+    float: left;
+    width: 30%;
+    height: 14em;
+    padding: 20px;
+    text-align: left;
+    font-size: 80%;
+    margin: 1%;
+    background: #eee;
+}
+
+.six-box h3{
+    margin-top: 1%;
+    margin-bottom: 15px;
+}
+
+.six-box p{
+    height: 7em;
+}
+
+.six-box .learn-box{
+    text-align: right;
+}
+
+.six-box .learn-box a {
+    text-decoration: none;
+}
+
+/* --------------------------------- FOOTER ------------------------------- */
+footer{
+    width: 100%;
+    overflow: hidden;
+    height: 65vh;
+    background: #3d3d3d;
+    margin-top: 30vh;
+    padding-top: 10px;
+}
+
+.footer-inner{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.footer-left{
+    float: left;
+    width: 30%;
+    height: auto;
+}
+
+.footer-box{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    margin: 35px 0;
+}
+
+.footer-box h6{
+    font-size: 1.25vw;
+    color: #eee;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 10px; 
+}
+
+.footer-box li{
+    list-style-type: none;
+    padding-top: 5px;
+}
+
+.footer-box li a{
+    font-size: 80%;
+    color: #779ab1;
+    text-decoration: none;
+}
+
+.footer-box li a i{
+    padding-right: 10px;
+    color: #eee;
+    width: 25px;
+    margin: auto;
+}
+
+.footer-right {
+    float: right;
+    width: 40%;
+    height: auto;
+}
+
+.footer-box-right{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    margin: 10px 0;
+}
+
+.footer-box-right img{
+    margin-top: 10%;
+    float: right;
+    width: 50px;
+    height: auto;
+}
+
+.footer-box-right h6{
+    font-size: 1.25vw;
+    color: #eee;
+    text-align: right;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 0; 
+}
+
+.footer-box-right p{
+    text-align: right;
+    color: #779ab1;
+    max-width: 100%;
+    font-size: 80%;
+}
+
+.footer-box-right p a{
+    color: #779ab1;
+    text-decoration: none;
+}
+
+/* --------------------------------- CONTACTS STYLING ------------------------------- */
+
+.contact{
+    background: #333;
+}
+
+.contact section{
+    height: 100vh;
+}
+
+.contact .contact-container{
+    width: 50%;
+    float: left;
+    margin-top: 150px;
+}
+
+iframe{
+    width: 80%;
+    height: 450px;
+}
+
+form{
+    margin-top: 50px;
+    text-align:center;
+}
+
+.form-control{
+    width: 30vw;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+input{
+    height: 45px;
+}
+
+form .submit{
+    background: #536c7c;
+    border-color: transparent;
+    color: #eee;
+    text-transform: uppercase;
+}
+
+form .submit:hover{
+    background: #779ab1;
+}
+
+textarea{
+    max-width: 30vw;
+    min-width: 30vw;
+    min-height: 50px;
+    max-height: 150px;
+    font-size: 16px;
+}
+/* ------------------------------ Video Wrapper ----------------------------------- */
+
+.video-h2{
+    margin-top: 150px;
+    margin-left: 10%;
+    width: fit-content;
+    text-transform: uppercase;
+    color: #eee;
+    /* background: #4eb4dd; */
+}
+
+.video-section{
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+
+hr{
+    color: #779ab1;
+    /* border-bottom: #454545; */
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin-left: 10%;
+    width: 350px;
+    size: 0.5px;
+    margin-bottom: 2.5%;
+}
+
+.video-number{
+    width: 31%;
+    float: left;
+    margin: 1%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.video-number:last-child{
+    margin-bottom: 50px;
+}
+
+.video-wrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0px;
+}
+
+.video-wrapper iframe{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+}

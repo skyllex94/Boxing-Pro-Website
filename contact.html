@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsiveness.css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/javascript/javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco|Montserrat:300" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boxing Contact Form</title>
+</head>
+<body class="contact">
+    <div class="nav-bar">
+            <div class="row clearfix">
+                    <a href="index.html"><img src="images/fist.png" class="logo"></a>
+                    <div class="mobile-icon" href="#" onclick="slideshow()"><i class="fa fa-bars"></i></div>
+                    <ul class="main-nav animated slideInDown" id="check-class" style="display: none;">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="index.html">History</a></li>
+                        <li><a href="index.html">Boxing Supplies</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                    </ul>
+            </div>
+    </div>
+    <section>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form id="contact-form" method="post" action="contactform.php">
+                    <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+                    <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+                    <input name="subject" type="text" class="form-control" placeholder="Subject" required><br>
+        
+                    <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+                    <input type="submit" class="form-control submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+
+        <div class="contact-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9242.528
+                476456166!2d23.32640834593831!3d42.69716227262941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                1!3m3!1m2!1s0x40aa85712687e499%3A0x29370f3a6e85350!2sHram-Pametnik+SV.Aleksandar+Nevski!
+                5e0!3m2!1sen!2sbg!4v1545249186264"
+                frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+    
+    <footer>
+            <div class="footer-inner">
+                <div class="footer-left">
+                    <div class="footer-box">
+                        <h6>Products</h6>
+                        <ul>
+                            <li><a href="#">Gloves</a></li>
+                            <li><a href="#">Hand Wraps</a></li>
+                            <li><a href="#">Footwear</a></li>
+                            <li><a href="#">Punching Bags</a></li>
+                            <li><a href="#">Mouthguards</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-box">
+                            <h6>Video Footage</h6>
+                            <ul>
+                                <li><a href="#">Training</a></li>
+                                <li><a href="#">Premium Content</a></li>
+                                <li><a href="#">Viral</a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="footer-left">
+                        <div class="footer-box">
+                            <h6>Company</h6>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Videos</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="footer-box">
+                                <h6>Follow us</h6>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i>Google+</a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-box-right">
+                            <h6>Contact</h6>
+                            <p>Telephone: +35989403734</p>
+                            <p>Fax: +359-3495-3249</p>
+                            <p>Email:  <a href="info@boxing.com">info@boxing.com</a></p>
+                        </div>
+    
+                        <div class="footer-box-right">
+                            <h6>Headquarters</h6>
+                            <p>bul. Bulgaria 66, Sofia</p>
+                            <p>District Sofia, Bulgaria</p>
+                        </div>
+                        <div class="footer-box-right" id="#Home">
+                            <a href="#"><img src="images/arrow-up.png"></a>
+                        </div>
+                    </div>
+                <div class="clr"></div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <p>Type Copyright © Made by: Kamen Kanchev</p>
+        </div>
+</body>
+</html>
